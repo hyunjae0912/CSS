@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>device-width
+
+    <style>
+        /* 자식 선택자 */
+        ul > li {
+            color: orange;
+        }
+        /* 자손  */
+        ul li {
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li>오렌지</li>
+            <ol>
+                <!-- 4번째 li는 ul태그의 직계자식이 아님 -->
+                <!-- 4번째 li는 ul태그의 자손 -->
+                <!-- 자식과 자손의 차이를 알아야함 -->
+                <li>ul안에 ol리스트</li>
+            </ol>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span>오렌지</span>
+    </div>
+</body>
+</html>
