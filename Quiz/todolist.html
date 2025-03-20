@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        li::before{
+            content: '(프로그래밍) ';
+            color: blue;
+        }
+        input {
+            margin-bottom: 10px;
+        }
+        #warning::after {
+            content: '* ';
+            color: red;
+        }
+        button::before{
+            content: '클릭하세요! ';
+            color: green;
+        }
+    </style>
+
+</head>
+<body>
+    <h3>해야할 일</h3>
+    <ul>
+        <li>HTML 연습</li>
+        <li>CSS 공부</li>
+        <li>JavaScript 배우기</li>
+    </ul>
+
+    <h3>폼 입력</h3>
+    <label id="warning">이름: </label>
+    <input type="text"> <br>
+
+    <label id="warning">이메일: </label>
+    <input type="text"> <br>
+
+    <label>나이: </label>
+    <input type="text"> <br>
+
+    <button>제출하기</button>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul {
+            list-style: none;
+        }
+        li {
+            float: left;
+            width: 50px;
+            height: 50px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        /* ul태그의 자식 중에서 i번째 항목을 선택 */
+        ul > li:nth-child(1){
+            background-color: red;
+        }
+        ul > li:nth-child(2){
+            background-color: orange;
+        }
+        ul > li:nth-child(3){
+            background-color: yellow;
+        }
+        ul > li:nth-child(4){
+            background-color: green;
+        }
+        
+        ul > li:nth-child(5){
+            background-color: blue;
+        }
+        ul > li:first-child{
+            border: 5px solid;
+        }
+        ul > li:last-child{
+            border: 5px solid;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>빨강</li>
+        <li>주황</li>
+        <li>노랑</li>
+        <li>녹색</li>
+        <li>파랑</li>
+    </ul>
+</body>
+</html>
+
+
+<!-- 
+구조 선택자는 부모 자ㅣ
+-->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 컨탠츠 선택자
+        div 태그에 컨텍츠 추가
+        before 기존 컨텐츠 앞에 '앞'을 추가
+        */
+        div::before{
+            content: '앞';
+            color: red;
+        }
+        div::after{
+            content: '뒤';
+            color: blue;
+        }
+    </style>
+
+</head>
+<body>
+    <div>Content</div>
+</body>
+</html>

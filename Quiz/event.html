@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label{
+            display: block;
+            text-align: center;
+            height: 30px;
+        }
+        option {
+            background-color: rgb(243, 247, 210);
+        }
+
+        .eventname:focus{
+            background-color: rgb(255, 255, 220);;
+        }
+
+        .director:focus{
+            background-color: rgb(233, 185, 226);;
+        }
+        .eventdate:focus{
+            background-color: rgb(200, 233, 185);
+        }
+        div{
+            display: block;            
+            text-align: center;
+            height: 30px;
+        }
+
+        div > span:active{
+            color: purple;
+        }
+
+        button:focus      {
+            border: 4px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">이벤트 등록</h2>
+        
+
+    <label style="color: rgb(233, 233, 23);" >이벤트명
+        <input type="text" class="eventname">
+    </label>
+    
+
+    <label style="color: purple;">주최자명
+        <input type="text" class="director">
+    </label>
+
+    <label style="color: green;">이벤트 날짜
+        <input type="date" class="eventdate">
+    </label>
+
+    <label>이벤트 유형
+        <select style="color: blue;">
+            <option>온라인</option>
+            <option>오프라인</option>
+        </select>
+    </label>
+    <label>참여 가능 연령대<br> </label>
+    <div>
+        <span><input type="checkbox">10대</span>
+        <span><input type="checkbox">20대</span>
+        <span><input type="checkbox">30대</span>
+        <span><input type="checkbox">40대 이상</span>
+    </div>
+    <br>
+    <button style="display: block; margin: 0 auto;">등록하기</button>
+</body>
+</html>

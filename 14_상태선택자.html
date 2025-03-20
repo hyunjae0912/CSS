@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 상태 선택자 */
+        a:hover {
+            /* :hover는 마우스를 올리면 css가 적용됨 */
+            font-weight: bold;
+        }
+
+        a:active {
+            /* :active는 마우스를 누르고 있는동안 실행됨 */
+            color: red;
+        }
+        
+        a:visited{
+            /* 버튼을 누르면 색이 바뀜 */
+            color: gray;
+        }
+
+        input:focus{
+            /* :focus 포커스가 되는 동안 css가 적용됨 */
+            background-color: deepskyblue;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <a href="http://www.naver.com">네이버</a>
+
+    <br>
+
+    <input type="text">
+
+</body>
+</html>

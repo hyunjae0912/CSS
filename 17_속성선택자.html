@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* [] 속성 선택자 
+        value= 지정한 값을 가지고 있는 요소를 선택하고 적용함
+        */
+        [value="안녕하세요"]{
+            color: orange;
+        }
+        [type="password"]{
+            color: red;
+        }
+        [disabled]{
+            color: blueviolet;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- value는 기본값 -->
+    <input type="text" value="안녕하세요"> <br>
+    <input type="password" value="1234"> <br>
+    <input type="text" value="ABCD" disabled> <br>
+</body>
+</html>

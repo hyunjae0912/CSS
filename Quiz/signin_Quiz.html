@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        td {
+            border: 1px solid gray;
+            /* 위아래 오른쪽왼쪽 */
+            padding: 10px 20px;
+        }
+        table{
+            /* 테이블에 있는 값을 전부 중앙으로 정렬함 */
+            border-collapse: collapse;
+            text-align: left;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .want_center{
+        /* 버튼을 셀의 가운데 정렬
+        밑에 있는 test-align은 그냥 버튼에 냅다 쓰면
+        작동이 안됨(버튼 안에 있는 텍스트가 정렬됨)
+        그래서 버튼을 감싸고 있는 부모에다가 쓰면
+        정렬이 됨(부모입장에선 버튼은 text이다.)
+        */
+            text-align: center;
+        }
+        [type="text"] {
+            color: green;
+        }
+        [type="email"] {
+            color: blue;
+        }
+        [type="password"] {
+            color: red;
+        }
+        button:active {
+            /* 버튼을 클릭했을 때 실행되는 것 */
+            background-color: deepskyblue;
+            color: white;
+        }
+        input:focus {
+            background-color: orange;
+        }
+
+        /* 라디오 버튼을 선택하면 그 옆에 있는 라벨을 강조 */
+        /* 1. 라디오 버튼 검색 */
+        /* 2. 채크된 라디오 버튼 검색 */
+        /* 3. 그 옆에 라벨 검색 */
+
+        [type="radio"]:checked + label {
+            font-weight: bold;
+            color: purple;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <table>
+        <h2 style="text-align: center;">회원가입</h2>
+        <tbody>
+            <tr>
+                <td>이름</td>
+                <td><input type="text" placeholder="이름 입력"></td>
+            </tr>
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" placeholder="이메일 입력"></td>
+            </tr> 
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password" placeholder="비밀번호 입력"></td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input type="radio" id="gender1" name = "gender" class="rad">
+                    <label for="gender1">남성</label>
+                
+                    <input type="radio" id="gender2" name="gender" class="rad">
+                    <label for="gender2">여성</label>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="want_center">
+                    <button>가입하기</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
